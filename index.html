@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Seinfeld Trivia Game">
+	<meta name="author" content="Jon Jump">
+
+	<title>The Ultimate Seinfeld Trivia Game</title>
+
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<!--Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!--External Stylesheet-->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body>
+	<div id="APPNAME">TriviaGameApp</div>
+	<div class="page-header">
+		<h1>The Ultimate Seinfeld Trivia Game</h1>
+	</div>
+
+	<div id="timer"></div>
+	<div id="LogDiv"></div>
+
+	<div class="container">
+		<button class="button btn-default btn-lg" type="button" id="startButton">Start Game</button>
+
+	<div id="questions" style="display: none;">
+	    <div id="Question1">
+	  		<h2>During the first few seasons, what was George Constanza's occupation? </h2>
+
+			<label class="radio-inline"><input type="radio" value="0" name="q1">Architec</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q1">NY Yankee's Management</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q1">Marine Biologist</label><br>
+			<label class="radio-inline"><input type="radio" value="1" name="q1">Real Estate</label><br>
+		</div>
+
+		<div id="Question2">
+			<br>
+		  	<h2>Kramer had many ideas. Which of these got him a spot on a "Regis and Kathy Lee"?</h2>
+			<br>
+			<label class="radio-inline"><input type="radio" value="1" name="q2">Coffee Table Book</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q2">The Bro</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q2">His autobiography</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q2">The Bladder System</label><br>
+		</div>
+
+		<div id="Question3">
+			<br>
+	    	<h2> George claims there are many moods to the way he dresses himself. What mood is he dressed in before he and Jerry go to the airport? </h2>
+			<br>
+			<label class="radio-inline"><input type="radio" value="0" name="q3">Sandy Sunday</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q3">Early Refreshment</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q3">Afternoon Bliss</label><br>
+			<label class="radio-inline"><input type="radio" value="1" name="q3">Morning Mist</label><br>
+		</div>
+
+ 		<div id="Question4">
+			<br>
+			<h2> Newman caught Jerry and his girlfriend making out at the movies. What movie?</h2>
+			<br>
+			<label class="radio-inline"><input type="radio" value="0" name="q4">Prognosis Negative</label><br>
+			<label class="radio-inline"><input type="radio" value="1" name="q4">Schindler's List</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q4">Beaches</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q4">Rochelle Rochelle</label><br>
+		</div>
+
+		<div id="Question5">
+			<br>
+			<h2> In the phenomenon of the "second spitter" there was someone on the grassy knoll. Who was it?</h2>
+			<br>
+			<label class="radio-inline"><input type="radio" value="0" name="q5">Darryl Strawberry</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q5">Buck Showalter</label><br>
+			<label class="radio-inline"><input type="radio" value="1" name="q5">Roger McDowell</label><br>
+			<label class="radio-inline"><input type="radio" value="0" name="q5">Keith Hernandez</label><br>
+		</div>
+
+		<div  id="log"></div>
+		<br>
+		<br>
+		<input id="submit" class="btn btn-primary" type="submit" value="Submit">
+ 	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	<!-- <script>
+		$( "input[name='q1']" ).on( "click", function()
+		{
+  			$( "#log" ).html( $( "input[name='q1']:checked" ).val() + " is checked!" );
+		});
+
+		$( "input[name='q2']" ).on( "click", function()
+		{
+  			$( "#log" ).html( $( "input[name='q2']:checked" ).val() + " is checked!" );
+		});
+
+		$( "input[name='q3']" ).on( "click", function()
+		{
+  			$( "#log" ).html( $( "input[name='q3']:checked" ).val() + " is checked!" );
+		});
+
+		$( "input[name='q4']" ).on( "click", function()
+		{
+  			$( "#log" ).html( $( "input[name='q4']:checked" ).val() + " is checked!" );
+		});
+
+		$( "input[name='q5']" ).on( "click", function()
+		{
+  			$( "#log" ).html( $( "input[name='q5']:checked" ).val() + " is checked!" );
+		});
+	</script> -->
+</body>
+</html>
